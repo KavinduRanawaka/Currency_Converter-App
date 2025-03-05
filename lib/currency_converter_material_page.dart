@@ -1,13 +1,29 @@
-
-
 import 'package:flutter/material.dart';
 
-class CurrencyConverterMaterialPage extends StatelessWidget{
- const CurrencyConverterMaterialPage({super.key});
+class CurrencyConverterMaterialPage extends StatefulWidget{
+   CurrencyConverterMaterialPage({super.key}){
+      debugPrint('constructor');
+  }
+  
+
+  @override
+  State<CurrencyConverterMaterialPage> createState() {
+    
+    return _CurrencyConverterMaterialPageState();
+  } 
+}
+class _CurrencyConverterMaterialPageState extends State<CurrencyConverterMaterialPage>{
  
- 
+  late double result;
+
+  @override
+  void initState(){
+    super.initState();
+  }
+
  @override
  Widget build(BuildContext context){
+  debugPrint('built fn');
   double result=0;
   final TextEditingController textEditingController=TextEditingController();
 
